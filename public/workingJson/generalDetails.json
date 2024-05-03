@@ -1,0 +1,79 @@
+{
+	"GeneralDetails": [
+		{
+      "UmisId": 3234658790,
+			"EmisId": 1234567890,
+			"Salutation": "Selvan",
+			"NameAsPerCertificate" : "Siva P",
+			"NameAsPerAadhar" : "Siva P",
+			"Gender": "Male",
+			"BloodGroup" : "+ve",
+			"Nationality" : "Indian",
+			"Religion" : "Hindu",
+			"Community" : "MBC",
+			"Caste" : "Vaniyar",
+			"AadharNumber": "NULL",
+			"IsTheStudentFirstGraduate?" : "N/A",
+			"DoComeUnderAnySpecialQuota?" : "No",
+			"DoYouBelongToDifferentlyAbledPerson": "No"
+		}
+	],
+	"ContactDetails":
+	[
+		{
+			"MobileNumber": "9600078711",
+			"EmailId": "example@gmail.com",
+			"Country": "India",
+			"State/UnionTerritory": "Tamil Nadu",
+			"LocationType": "Rural",
+			"District": "Villupuram",
+			"Taluk": "Villipuram",
+			"Village": "Villupuram",
+			"Block": "Koliyanur",
+			"VillagePanchayat": "Koliyanur",
+			"PostalAddress": "Pudhu nagar",
+			"Pincoed": 605402
+		}
+	],
+	"FamilyDetails":
+	[
+		{
+			"FatherName": "Parthsarathy",
+			"FatherOccupation": "Farmer",
+			"MotherName": "Keerthi",
+			"MotherOccupation": "House Wife",
+			"GuardianName": "Valli",
+			"IsOrphanCategory": "No",
+			"AnnualFamilyIncome": 200000,
+			"Parent/Spouse/Guardian/MobileNumber": 9840506632
+		}
+	],
+	"CurrentAcademicInfo":
+	[
+		{
+			"AcademicYearJoining": "2023-2024",
+			"StreamType": "Engineering & Technology",
+			"CourseType": "PG",
+			"Course": "PG(engg&tech)",
+			"BranchAndSpecialization": "Automobile Engg",
+			"MediumOfInstruction": "English",
+			"ModeOfStudy": "Regular",
+			"DateOfAdmission": "12-06-2023",
+			"TypeOfAdmission": "Government",
+			"AdmissionNumber": 1234565778,
+			"RollNumber": 34567,
+			"LaterlyEntry": "No",
+			"Hosteller": "No",
+			"CurrentStatusOfTheStudent": "Studying"
+		}
+	],
+	"BankDetails":
+	[
+		{
+			"NameOfTheBank": "AXIS",
+			"Branch": "Villupuram",
+			"AccountNumber": "009045654654",
+			"IfscCode": "OOOTN345345"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+@import '../../Style/variable';
+
+.bannerComp {
+	height: 200px;
+	background: url('../../Assets/Header-image/newbgpattern.jpg');
+	background-position: center;
+	position: relative;
+  img {
+    width: 10%;
+    position: absolute;
+    top:0;
+    left:1rem;
+    right:0;
+    bottom: 0;
+    margin: auto 0;
+    cursor: pointer;
+    animation: fadeInOut 1s alternate;
+  }
+	p {
+		position: absolute;
+    padding: 1rem 2rem;
+    right: 2rem;
+    bottom: 1rem;
+    border-radius: 5px;
+    background-color: $headerBg;
+    color: $white;
+    cursor: pointer;
+    width: max-content;
+    text-align: center;
+    // &::after{
+    //   content: "";
+    //   width: 10px;
+    //   height: 10px;
+    //   position: absolute;
+    //   top: 1rem;
+    //   left: 1rem;
+    //   border-radius: 50%;
+    //   background: #fff;
+    //   animation: fadeInOut 1s infinite alternate;
+    // }
+	}
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

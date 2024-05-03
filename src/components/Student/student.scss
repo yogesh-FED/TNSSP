@@ -1,0 +1,89 @@
+@import '../../Style/variable';
+
+.studentScreen {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  ul {
+    li{
+      &.nav-item {
+        button {
+          padding: 2rem;
+          background: #e4e4e4;
+          color: $darkGreen;
+          border-radius: 0;
+          font-weight: bold;
+          border-right: 1px solid $darkGreen;
+          text-transform: uppercase;
+          position: relative;
+          &.active {
+            background-color: $headerBg;
+            color: $white;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 30px;
+              border-left: 20px solid transparent;
+              border-right: 20px solid transparent;
+              border-bottom: 20px solid $headerBg;
+              z-index: 99;
+              bottom: -24px;
+              transform: rotate(180deg);
+              left: 0;
+              right: 0;
+              margin: auto;
+              animation: fadeInOut 1s alternate;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    padding-top: 3rem;
+  }
+  .availSchemes {
+    padding: 1rem;
+    width: max-content;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: $marqueeBg;
+    color: $darkGreen;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    &:hover {
+      background-color: $darkGreen;
+      color: $white;
+      transform: scale(1.1);
+    }
+    &.zIndx {
+      z-index: -1;
+    }
+  }
+}
+.schemeCard {
+    p {
+      &.card-header {
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: $headerBg;
+        color: $white;
+      }
+    }
+  .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

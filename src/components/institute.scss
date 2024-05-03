@@ -1,0 +1,103 @@
+@import '../Style/variable';
+
+.instituteMain {
+  .bannerComp {
+    p {
+      display: none;
+    }
+  }
+  .innerContainer {
+    padding: 3rem;
+    h3 {
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .ApiList {
+      height: 300px;
+      overflow: hidden;
+      overflow-y: auto;
+      box-shadow: $boxShadow2;
+      border-radius: 5px;
+      padding: 1rem;
+      position: absolute;
+      z-index: 99;
+      background-color: $white;
+      li {
+        list-style-type: none;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 5px;
+        &:hover {
+          background-color: $darkGreen;
+          color: $white;
+        }
+      }
+    }
+    .districtList {
+      width: 30%;
+    }
+    .instituteList {
+      margin-left: 20rem;
+    }
+  }
+  .instituteForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .districtInput {
+      margin-right: 1rem;
+      width: 30%;
+    }
+    .instituteInput {
+      width: 70%;
+    }
+  }
+  .instituteDetails {
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: $boxShadow2;
+    margin-bottom: 3rem;
+    animation: fadeInOut 3s alternate;
+    h4 {
+      color: $darkGreen;
+      position: relative;
+      padding: 1rem;
+      animation: fadeInOut 5s alternate;
+      margin-bottom: 3rem;
+      &::after {
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: $darkGreen;
+        right: 0;
+        margin: auto;
+        left: 0;
+        position: absolute;
+        bottom: 0px;
+        animation: fadeInOut 2s infinite alternate;
+      }
+    }
+    .detailsList {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      input {
+        background-color: $darkGreen;
+        color: $white;
+        font-size: 14px;
+      }
+      label {
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

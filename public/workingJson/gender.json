@@ -1,0 +1,10 @@
+{
+  "Gender" : [
+    {
+      "Value0": "Select - Option",
+      "value1": "Male",
+      "value2": "Female",
+      "value3": "Transgender"
+    }
+  ]
+}

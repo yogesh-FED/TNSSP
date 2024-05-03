@@ -1,0 +1,50 @@
+@import '../../Style/variable';
+
+.scholarshipStatus {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  color: $white;
+  background-color: rgba(112, 82, 82, 0.8);
+  .closeicon {
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+
+  }
+  .innerStatus {
+    padding: 1rem 4rem 4rem;
+    width: 80%;
+    position: absolute;
+    height: 90%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: $white;
+    p.statusHeading {
+      font-size: 24px;
+      color: $darkGreen;
+      font-weight: bold;
+    }
+    .head {
+      font-weight: 800;
+      margin: 0;
+      background: #eee;
+      padding: 0.5rem;
+      color: $darkGreen;
+    }
+    .subHead {
+      color: $darkGreen;
+      font-size: 16px
+    }
+    .innerCol {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 1rem;
+    }
+  }
+}

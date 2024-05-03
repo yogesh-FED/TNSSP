@@ -1,0 +1,236 @@
+{
+  "Schemes": [
+    {
+      "CommunityId": 1,
+      "IncomeId": 1,
+      "InstitutetypeId": 11,
+      "CourseType": "Diploma",
+      "OwenershipId": "G/GA",
+      "gender": "1Transgender",
+      "IsHosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+      "CommunityName": "MBC",
+      "DeptId": "_",
+      "SchemeId": 1000,
+      "SchemeName": "CentralScheme-Post-MatricScholarshipScheme(SC)",
+      "Id": 1,
+      "Caste": "BattuTurkas"
+    },
+    {
+      "CommunityId": 2,
+      "IncomeId": 2,
+      "InstitutetypeId": 12,
+      "CourseType": "UG",
+      "OwenershipId": "G/GA/SF(Gov Quota)",
+     "gender": "2Male",
+      "IsHosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+      
+      "DeptId": "_",
+      "SchemeId": 1001,
+      "SchemeName": "StateScheme-SpecialPost-MatricScholarshipScheme(SCC)",
+      "CommunityName": "MBC",
+      "Id": 4000,
+      "Caste": "Converts to Christianity from Scheduled Castes (Sidhannar)"
+    },
+    {
+      "CommunityId": 3,
+      "IncomeId": 3,
+      "InstitutetypeId": 13,
+      "CourseType": "UG",
+      "OwnershipId": "G/GA",
+     "gender": "3Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1002,
+      "SchemeName": "StateScheme-HigherEducationSpecialScholarship(SC,SCC)",
+      "CommunityName": "ST",
+      "Id": 4001,
+      "Caste": "Sidhannar"
+    },
+    {
+      "CommunityId": 4,
+      "IncomeId": 4,
+      "InstitutetypeId": 14,
+      "CourseType": "UG,PG",
+      "OwenershipId": "G/GA/SF(Gov Quota)",
+     "gender": "4Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1003,
+      "SchemeName": "StateScheme-FreeEducationforUGBoys,Girls,Transgenderonly(SC,SCC)",
+      "CommunityName": "OC",
+      "Id": 4002,
+      "Caste": "Converts to Christianity from Scheduled Castes (Chalavadi)"
+    },
+    {
+      "CommunityId": 5,
+      "IncomeId": 5,
+      "InstitutetypeId": 15,
+      "CourseType": "Diploma",
+      "OwenershipId": "G/GA",
+     "gender": "5Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1004,
+      "SchemeName": "StateScheme-FreeEducationforPGGirls,Transgenderonly(SC,SCC)",
+      "CommunityName": "SC-Arunthathiyar",
+      "Id": 4003,
+      "Caste": "Boyar"
+    },
+    {
+      "CommunityId": 6,
+      "IncomeId": 6,
+      "InstitutetypeId": 16,
+      "CourseType": "UG,PG",
+      "OwenershipId": "G/GA",
+     "gender": "6Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1005,
+      "SchemeName": "StateScheme-IncentiveSchemeforPHDscholars(SC,SCC)",
+      "CommunityName": "BC-Muslim",
+      "Id": 4004,
+      "Caste": "Oddar"
+    },
+    {
+      "CommunityId": 7,
+      "IncomeId": 7,
+      "InstitutetypeId": 17,
+      "CourseType": "PHD",
+      "OwenershipId": "G/GA",
+     "gender": "7Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1006,
+      "SchemeName": "StateScheme-TuitionFeeConcession(SC,SCC)",
+      "CommunityName": "BC-Others",
+      "Id": 4005,
+      "Caste": "Dasari"
+    },
+    {
+      "CommunityId": 8,
+      "IncomeId": 8,
+      "InstitutetypeId": 18,
+      "CourseType": "UG,PG",
+      "OwenershipId": "Central University",
+     "gender": "8Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1007,
+      "SchemeName": "ADW-LawIncentivescheme (Final Year Law students) (SC,SCC)",
+      "CommunityName": "SC-Others",
+      "Id": 4006,
+      "Caste": "Muthiriyar"
+    },
+    {
+      "CommunityId": 9,
+      "IncomeId": 9,
+      "InstitutetypeId": 19,
+      "CourseType": "10th",
+      "OwenershipId": "G/GA(other than TM)",
+     "gender": "9Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1008,
+      "SchemeName": "CentralScheme-Post-MatricScholarship(ST)",
+      "CommunityName": "DNC (Denotified Communities)",
+      "Id": 4007,
+      "Caste": "Dommara"
+    },
+    {
+      "CommunityId": 10,
+      "IncomeId": 10,
+      "InstitutetypeId": 20,
+      "CourseType": "10th",
+      "OwenershipId": "G/GA(other than TM)",
+     "gender": "0Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1009,
+      "SchemeName": "StateScheme-HigherEducationSpecialScholarship(ST)",
+      "Id": 4008,
+      "Caste": "Servai"
+    },
+    {
+      "CommunityId": 11,
+      "IncomeId": 11,
+      "InstitutetypeId": 21,
+      "CourseType": "11th & 12th",
+      "OwenershipId": "G/GA(other than TM)",
+     "gender": "11Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1010,
+      "SchemeName": "StateScheme-FreeEducationforUGBoys,Girls,Transgendersonly(ST)",
+      "Id": 4009,
+      "Caste": "Nulayar"
+    },
+    {
+      "CommunityId": 12,
+      "IncomeId": 12,
+      "InstitutetypeId": 22,
+      "CourseType": "11th & 12th",
+      "OwenershipId": "G/GA(other than TM)",
+      "gender": "12Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1011,
+      "SchemeName": "StateScheme-FreeEducationforPGGirls,Transgendersonly(ST)",
+      "Id": 4010,
+      "Caste": "Aryavathi"
+    },
+    {
+      "CommunityId": 13,
+      "IncomeId": 13,
+      "InstitutetypeId": 23,
+      "CourseType": "UG",
+      "OwenershipId": "G/GA/SF(Gov Quota)",
+      "gender": "13Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1012,
+      "SchemeName": "StateScheme-TuitionFeeConcession(ST)",
+      "Id": 4011,
+      "Caste": "Badagar"
+    },
+    {
+      "CommunityId": 14,
+      "IncomeId": 14,
+      "InstitutetypeId": 24,
+      "CourseType": "3rd to 6th",
+      "OwenershipId": "G/GA",
+     "gender": "14Male",
+      "ihosteler": "Hosteller/Dayscholar",
+      "Occupation": "Any Occupation",
+
+      "DeptId": "_",
+      "SchemeId": 1013,
+      "SchemeName": "CentralScheme-FreeEducationScheme(ProfessionalCourses)",
+      "Id": 4012,
+      "Caste": "Badagar"
+    }
+  ]
+}

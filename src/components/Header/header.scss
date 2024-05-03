@@ -1,0 +1,40 @@
+.header {
+	background-color: #006A4E;
+	.myProfile {
+		padding: 10px;
+		span {
+			color: #fff;
+			margin-left: 10px;
+			padding: 0.5rem;
+			cursor: pointer;
+			border-left: 1px solid #ccc;
+		}
+	}
+	h5 {
+		margin: 0;
+	}
+	padding: 1rem;
+	a {
+		text-decoration: none;
+		color: #fff;
+		margin-left: auto;
+		&:hover {
+			color: #fff;
+		}
+		&:focus {
+			color: #fff;
+		}
+	}
+	.profileName-signOut {
+		text-align: right; 
+		.Mla {
+			margin-left: auto;
+		}
+		.dropdown-menu {
+			a {
+				color: #006A4E;
+				background-color: #fff;
+			}
+		}
+	}
+}

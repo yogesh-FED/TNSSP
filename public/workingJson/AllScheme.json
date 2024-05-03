@@ -1,0 +1,228 @@
+{
+  "AllScheme" : [
+    {
+      "scheme_id": 1000,
+      "scheme_name": "CentralScheme",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1001,
+      "scheme_name": "State Scheme - Special Post-Matric Scholarship Scheme (SCC)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1002,
+      "scheme_name": "State Scheme - Higher Education Special Scholarship (SC, SCC)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1003,
+      "scheme_name": "State Scheme - Free Education for UG Boys, Girls, Transgender only (SC, SCC)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1004,
+      "scheme_name": "State Scheme - Free Education for PG Girls, Transgender only (SC, SCC)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1005,
+      "scheme_name": "State Scheme - Incentive Scheme for PHD scholars (SC, SCC)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1006,
+      "scheme_name": "State Scheme - Tuition Fee Concession (SC, SCC)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1007,
+      "scheme_name": "ADW- Law Incentive scheme (Final Year Law students) – SC,SCC",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1008,
+      "scheme_name": "Central Scheme - Post-Matric Scholarship (ST)",
+      "dept_id": 110,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1009,
+      "scheme_name": "State Scheme - Higher Education Special Scholarship (ST)",
+      "dept_id": 110,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1010,
+      "scheme_name": "State Scheme - Free Education for UG Boys, Girls, Transgenders only (ST)",
+      "dept_id": 110,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1011,
+      "scheme_name": "State Scheme - Free Education for PG Girls, Transgenders only (ST)",
+      "dept_id": 110,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1012,
+      "scheme_name": "State Scheme - Tuition Fee Concession (ST)",
+      "dept_id": 110,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1013,
+      "scheme_name": "Central Scheme - Free Education Scheme (Professional Courses)",
+      "dept_id": 120,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1014,
+      "scheme_name": "Central Scheme - Post-Matric Scholarship Scheme (College Students)",
+      "dept_id": 120,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1015,
+      "scheme_name": "Central Scheme - Free Education Scheme (Degree Courses)",
+      "dept_id": 120,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1016,
+      "scheme_name": "Central Scheme - Free Education Scheme (Diploma Courses)",
+      "dept_id": 120,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1017,
+      "scheme_name": "Central Scheme - Free Education Scheme (Professional Courses)",
+      "dept_id": 130,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1018,
+      "scheme_name": "Central Scheme - Post-Matric Scholarship Scheme (College Students)",
+      "dept_id": 130,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1019,
+      "scheme_name": "Central Scheme - Free Education Scheme (Degree Courses)",
+      "dept_id": 130,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1020,
+      "scheme_name": "Central Scheme - Free Education Scheme (Diploma Courses)",
+      "dept_id": 130,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1021,
+      "scheme_name": "Central - Pre-Matric Scholarship scheme for SC Students (IX and X Std)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1022,
+      "scheme_name": "Central Pre-Matric Scholarship for SC School Students (XI and XII Std)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1023,
+      "scheme_name": " State Girls Incentive for SC Students (III to VIII Std)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1024,
+      "scheme_name": "Central Pre-Matric Scholarship for Uncleaned occupation (UCO)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1025,
+      "scheme_name": "State Post-Matric Scholarship for SCC Students (XI and XII Std)",
+      "dept_id": 100,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1026,
+      "scheme_name": "Central Pre-Matric Scholarship for ST Students (IX and X Std)",
+      "dept_id": 110,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1027,
+      "scheme_name": "State Girls Incentive for ST Students (III to VIII Std)",
+      "dept_id": 110,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1028,
+      "scheme_name": "Central Post-Matric Scholarship for ST Students (XI and XII Std)",
+      "dept_id": 110,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1029,
+      "scheme_name": "Central - PM Yasasvi- Pre-Matric Scholarship for BC Students (IX and X Std)",
+      "dept_id": 120,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1030,
+      "scheme_name": "Central - PM Yasasvi- Pre-Matric Scholarship for MBC/DNC Students (IX and X Std)",
+      "dept_id": 130,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    },
+    {
+      "scheme_id": 1031,
+      "scheme_name": "State Rural Incentive for MBC/DNC Girl Students (III to VI Std)",
+      "dept_id": 130,
+      "created_date": "22/4/2024 00:00:00",
+      "updated_date": "22/4/2024 00:00:00"
+    }
+  ]
+}

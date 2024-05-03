@@ -1,0 +1,238 @@
+{
+  "District" : [
+    {
+     "Id": 25,
+     "DistrictCode": 25,
+     "DistrictName": "THENI",
+     "StateId": 1
+    },
+    {
+     "Id": 26,
+     "DistrictCode": 26,
+     "DistrictName": "VIRUDHUNAGAR",
+     "StateId": 1
+    },
+    {
+     "Id": 27,
+     "DistrictCode": 27,
+     "DistrictName": "RAMANATHAPURAM",
+     "StateId": 1
+    },
+    {
+     "Id": 28,
+     "DistrictCode": 28,
+     "DistrictName": "THOOTHUKUDI",
+     "StateId": 1
+    },
+    {
+     "Id": 29,
+     "DistrictCode": 29,
+     "DistrictName": "TIRUNELVELI",
+     "StateId": 1
+    },
+    {
+     "Id": 1,
+     "DistrictCode": 1,
+     "DistrictName": "TIRUVALLUR",
+     "StateId": 1
+    },
+    {
+     "Id": 4,
+     "DistrictCode": 4,
+     "DistrictName": "VELLORE",
+     "StateId": 1
+    },
+    {
+     "Id": 6,
+     "DistrictCode": 6,
+     "DistrictName": "TIRUVANNAMALAI",
+     "StateId": 1
+    },
+    {
+     "Id": 7,
+     "DistrictCode": 7,
+     "DistrictName": "VILLUPURAM",
+     "StateId": 1
+    },
+    {
+     "Id": 8,
+     "DistrictCode": 8,
+     "DistrictName": "SALEM",
+     "StateId": 1
+    },
+    {
+     "Id": 9,
+     "DistrictCode": 9,
+     "DistrictName": "NAMAKKAL",
+     "StateId": 1
+    },
+    {
+     "Id": 11,
+     "DistrictCode": 11,
+     "DistrictName": "NILGIRIS",
+     "StateId": 1
+    },
+    {
+     "Id": 15,
+     "DistrictCode": 15,
+     "DistrictName": "THIRUCHIRAPPALLI",
+     "StateId": 1
+    },
+    {
+     "Id": 32,
+     "DistrictCode": 32,
+     "DistrictName": "TIRUPPUR",
+     "StateId": 1
+    },
+    {
+     "Id": 34,
+     "DistrictCode": 34,
+     "DistrictName": "TENKASI",
+     "StateId": 1
+    },
+    {
+     "Id": 36,
+     "DistrictCode": 36,
+     "DistrictName": "TIRUPATHUR",
+     "StateId": 1
+    },
+    {
+     "Id": 37,
+     "DistrictCode": 37,
+     "DistrictName": "RANIPET",
+     "StateId": 1
+    },
+    {
+     "Id": 38,
+     "DistrictCode": 38,
+     "DistrictName": "MAYILADUTHURAI",
+     "StateId": 1
+    },
+    {
+     "Id": 39,
+     "DistrictCode": 39,
+     "DistrictName": "OTHERS",
+     "StateId": 1
+    },
+    {
+     "Id": 35,
+     "DistrictCode": 296974,
+     "DistrictName": "CHENGALPATTU",
+     "StateId": 1
+    },
+    {
+     "Id": 17,
+     "DistrictCode": 560,
+     "DistrictName": "ARIYALUR",
+     "StateId": 1
+    },
+    {
+     "Id": 12,
+     "DistrictCode": 523,
+     "DistrictName": "COIMBATORE",
+     "StateId": 1
+    },
+    {
+     "Id": 18,
+     "DistrictCode": 524,
+     "DistrictName": "CUDDALORE",
+     "StateId": 1
+    },
+    {
+     "Id": 5,
+     "DistrictCode": 525,
+     "DistrictName": "DHARMAPURI",
+     "StateId": 1
+    },
+    {
+     "Id": 13,
+     "DistrictCode": 526,
+     "DistrictName": "DINDIGUL",
+     "StateId": 1
+    },
+    {
+     "Id": 2,
+     "DistrictCode": 2,
+     "DistrictName": "CHENNAI",
+     "StateId": 1
+    },
+    {
+     "Id": 16,
+     "DistrictCode": 16,
+     "DistrictName": "PERAMBALUR",
+     "StateId": 1
+    },
+    {
+     "Id": 19,
+     "DistrictCode": 19,
+     "DistrictName": "NAGAPATTINAM",
+     "StateId": 1
+    },
+    {
+     "Id": 20,
+     "DistrictCode": 20,
+     "DistrictName": "THIRUVARUR",
+     "StateId": 1
+    },
+    {
+     "Id": 21,
+     "DistrictCode": 21,
+     "DistrictName": "THANJAVUR",
+     "StateId": 1
+    },
+    {
+     "Id": 22,
+     "DistrictCode": 22,
+     "DistrictName": "PUDUKKOTTAI",
+     "StateId": 1
+    },
+    {
+     "Id": 23,
+     "DistrictCode": 23,
+     "DistrictName": "SIVAGANGAI",
+     "StateId": 1
+    },
+    {
+     "Id": 24,
+     "DistrictCode": 24,
+     "DistrictName": "MADURAI",
+     "StateId": 1
+    },
+    {
+     "Id": 10,
+     "DistrictCode": 527,
+     "DistrictName": "ERODE",
+     "StateId": 1
+    },
+    {
+     "Id": 33,
+     "DistrictCode": 296959,
+     "DistrictName": "KALLAKURICHI",
+     "StateId": 1
+    },
+    {
+     "Id": 3,
+     "DistrictCode": 528,
+     "DistrictName": "KANCHEEPURAM",
+     "StateId": 1
+    },
+    {
+     "Id": 30,
+     "DistrictCode": 529,
+     "DistrictName": "KANYAKUMARI",
+     "StateId": 1
+    },
+    {
+     "Id": 14,
+     "DistrictCode": 530,
+     "DistrictName": "KARUR",
+     "StateId": 1
+    },
+    {
+     "Id": 31,
+     "DistrictCode": 531,
+     "DistrictName": "KRISHNAGIRI",
+     "StateId": 1
+    }
+   ]
+}

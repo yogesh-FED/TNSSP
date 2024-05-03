@@ -1,0 +1,26 @@
+{
+	"UserType": [
+		{
+			"id": 1,
+			"title": "Student Login",
+			"eventKey": "StudentLogin"
+		},{
+			"id": 2,
+			"title": "Institute Login",
+			"eventKey": "InstituteLogin"
+		},{
+			"id": 3,
+			"title": "Welfare Login",
+			"eventKey": "WelfareLogin"
+		},{
+			"id": 4,
+			"title": "Education Login",
+			"eventKey": "EducationLogin"
+		},{
+			"id": 5,
+			"title": "Admin Login",
+			"eventKey": "AdminLogin"
+		}
+	]
+}
+  

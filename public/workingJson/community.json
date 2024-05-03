@@ -1,0 +1,41 @@
+{
+  "Community" :
+  [
+    {
+     "Id": 1,
+     "CommunityName": "NOT APPLICABLE"
+    },
+    {
+     "Id": 3,
+     "CommunityName": "MBC"
+    },
+    {
+     "Id": 4,
+     "CommunityName": "ST"
+    },
+    {
+     "Id": 6,
+     "CommunityName": "OC"
+    },
+    {
+     "Id": 7,
+     "CommunityName": "SC-Arunthathiyar"
+    },
+    {
+     "Id": 10,
+     "CommunityName": "BC-Muslim"
+    },
+    {
+     "Id": 11,
+     "CommunityName": "BC-Others"
+    },
+    {
+     "Id": 12,
+     "CommunityName": "SC-Others"
+    },
+    {
+     "Id": 13,
+     "CommunityName": "DNC (Denotified Communities)"
+    }
+  ]
+}

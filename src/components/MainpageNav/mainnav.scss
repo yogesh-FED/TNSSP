@@ -1,0 +1,162 @@
+@import '../../Style/variable';
+
+.marText {
+  font-size: 12px;
+}
+.sticky {
+  animation: fadeInOut 2s alternate;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &.customCss {
+    background: $white;
+    top: 12%;
+    position: fixed;
+  }
+  &.marDiv {
+    top:9%;
+  }
+}
+marquee{
+  height: 20px;
+  background: $marqueeBg;
+  color: $fontColor;
+}
+.mainHeader {
+  .fontChange {
+    span {
+      padding-right: 1rem;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  padding: 1rem;
+  background-color: $headerBg;
+  p {
+    padding: 0;
+    margin: 0;
+    color: $white;
+  }
+  img {
+    width: 10%;
+  }
+  .supportRequst {
+    width:max-content;
+    margin-left: auto;
+    padding: 0.2rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.customCss {
+  box-shadow: $boxShadow;
+  .sideMenus {
+    a {
+      margin-right: 2rem;
+      color: $fontColor;
+    }
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+  .fontIncr {
+    p {
+      font-size: 24px;
+      color: $fontColor;
+      margin: 0;
+    }
+  }
+  .loginStyle {
+    padding: 0.5rem 2rem !important;
+    background-color: $darkGreen;
+    color: $white !important;
+    border-radius: $shadowRadius;
+    box-shadow: $boxShadow;
+    margin-right: 0 !important;
+  }
+}
+.navSec {
+  img {
+    width: 75px;
+  }
+}
+.headerContent {
+  padding: 5rem 4rem;
+  background: url(../../Assets/Home-Banner/banner.jpg);
+  background-position: center;
+  background-size: 100%;
+  // p {
+  //   animation: fadeInOut 2s ease-in-out infinite alternate;
+  // }
+  h1 {
+    letter-spacing: 1px;
+    color: $darkGreen;
+    position: relative;
+    padding-bottom: 1rem;
+    //animation: slideIn 1s ease-out forwards;
+    animation: fadeInOut 2s ease-in-out alternate;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 20px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -50px;
+      background: url(../../Assets/Header-image/title-shape-1-1.png);
+      background-repeat: no-repeat;
+      animation: fadeInOut 2s infinite alternate;
+    }
+  } 
+  .headerinnercont {
+    width: 75%;
+    line-height: 24px;
+    margin: auto;
+    background: $white;
+    box-shadow: $boxShadow;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes smartMove {
+  0% {
+    width: 0;
+  }
+  15% {
+    width: 100%;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    width: 100%;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,46 @@
+@import '../Style/variable';
+
+@font-face {
+  font-family: 'LexendDeca-Black';
+  src: url('../Fonts/LexendDeca/LexendDeca-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendDeca-Bold';
+  src: url('../Fonts/LexendDeca/LexendDeca-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendDeca-ExtraBold';
+  src: url('../Fonts/LexendDeca/LexendDeca-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendDeca-ExtraLight';
+  src: url('../Fonts/LexendDeca/LexendDeca-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendDeca-Light';
+  src: url('../Fonts/LexendDeca/LexendDeca-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendDeca-Medium';
+  src: url('../Fonts/LexendDeca/LexendDeca-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendDeca-Regular';
+  src: url('../Fonts/LexendDeca/LexendDeca-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendDeca-SemiBold';
+  src: url('../Fonts/LexendDeca/LexendDeca-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendDeca-Thin';
+  src: url('../Fonts/LexendDeca/LexendDeca-Thin.ttf') format('truetype');
+}
+
+$primary-color: #f3f3f3 !important;
+
+body {
+  background-color: $white;
+  //background: url(../Assets/Header-image/bgpatternew.jpg);
+  //font-family: 'LexendDeca-Regular', sans-serif !important;
+}

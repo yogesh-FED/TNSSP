@@ -1,0 +1,31 @@
+@import '../../Style/variable';
+
+.latestAnnouce {
+  padding: 4rem;
+  color: $fontColor;
+	h3 {
+		position: relative;
+		&::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 20px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -50px;
+      background: url(../../Assets/Header-image/title-shape-1-1.png);
+      background-repeat: no-repeat;
+      //animation: fadeInOut 2s ease-in-out infinite alternate;
+    }
+	}
+  .latestInfoDiv {
+    margin-top: 2rem;
+    border-radius: 15px;
+    padding: 4rem;
+    background: url('../../Assets/latestNews/event-bg-3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}

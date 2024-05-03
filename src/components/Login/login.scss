@@ -1,0 +1,110 @@
+@import '../../Style/variable';
+
+.loginParent {
+	.loginHeader {
+		background-color: $white;
+		box-shadow: $boxShadow;
+		//position: fixed;
+		//z-index: 9999;
+	}
+	.greenBg {
+		background-color: $darkGreen;
+		color: $lightGreen;
+		//margin-top: 150px;
+		.intoText {
+			color: $white;
+			width: 75%;
+			padding: 1rem;
+			margin: auto;
+		}
+		span {
+			display: block;
+			padding-bottom: 1rem;
+		}
+	}
+	.slider {
+		padding: 1rem;
+	}
+	.aboutUs {
+		padding: 2rem;
+		background-color: $white;
+	}
+	.logoImg {
+		img {
+			padding: 1rem;
+			width: 130px;
+			height: 130px;
+			cursor: pointer;
+		}
+	}
+	height: 100vh;
+	.LoginPageTitleHeader {
+		padding: 1rem;
+		p {
+			margin: 0;
+			font-size: 20px;
+		}
+		h1 {
+			margin: 0;
+			padding: 0.5rem 0;
+		}
+	}
+	.loginUserSelect {
+		padding: 2rem 1rem 1rem;
+	}
+	.loginUserType {
+		ul {
+			margin: 0;
+			padding: 0;
+			display: block;
+			li {
+				display: inline-block;
+				width: 15%;
+				margin: 0 0.5rem;
+				padding: 1rem;
+				border-radius: 4px;
+				box-shadow: $boxShadow;
+				@media (max-width: 767.98px) {
+					width: 100%;
+					margin: 0.5rem 0;
+				}
+			}
+		}
+	}
+}
+.idLogin {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	li {
+		list-style-type: none;
+		margin-right: 1rem;
+		width: 50%;
+		color: $darkGreen;
+		border: 1px solid $darkGreen;
+		cursor: pointer;
+		border-radius: 5px;
+		padding: 0.5rem;
+		font-size: 16px;
+		text-transform: uppercase;
+		&.active {
+			background: $darkGreen;
+			color: $white;
+		}
+	}
+	.col-lg-6 {
+		p {
+			color: $darkGreen;
+			text-transform: uppercase;
+			border: 1px solid $darkGreen;
+			border-radius: 5px;
+			cursor: pointer;
+			text-align: center;
+			padding: 1rem;
+			&.active {
+				background: $darkGreen;
+				color: $white;
+			}
+		}
+	}
+}
