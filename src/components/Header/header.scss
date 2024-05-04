@@ -1,5 +1,11 @@
+@import '../../Style/variable';
+
 .header {
-	background-color: #006A4E;
+	padding: 0 !important;
+  border-bottom: 1px solid #eee;
+	img {
+		width: 50px;
+	}
 	.myProfile {
 		padding: 10px;
 		span {
@@ -16,13 +22,13 @@
 	padding: 1rem;
 	a {
 		text-decoration: none;
-		color: #fff;
+		color: $darkGreen;
 		margin-left: auto;
 		&:hover {
-			color: #fff;
+			color: $darkGreen;
 		}
 		&:focus {
-			color: #fff;
+			color: $darkGreen;
 		}
 	}
 	.profileName-signOut {

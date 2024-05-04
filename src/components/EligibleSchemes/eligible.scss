@@ -1,0 +1,48 @@
+@import '../../Style/variable';
+
+.eliglibleSch {
+  .eligibleSchemeParent {
+    .chkForm {
+      label {
+        text-decoration: underline;
+      }
+    }
+    margin-bottom: 2rem;
+    .applyScheme {
+      margin: 0;
+      padding: 0.5rem;
+      width: fit-content;
+      cursor: pointer;
+      font-size: 14px;
+      background-color: $darkGreen;
+      color: $white;
+      border-radius: 5px;
+      margin-left: auto;
+    }
+    .active {
+      background: #00c1b2;
+      color: #000;
+    }    
+  }
+  .sendForApproval {
+    width: auto;
+    margin: auto;
+    border: 0;
+    background-color: $darkGreen;
+    color: $white;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .totalSelection {
+    margin-bottom: 2rem;
+    p {
+      margin: 0;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: $boxShadow2;
+      //background: $marqueeBg;
+      color: $fontBold;
+    }
+  }
+}

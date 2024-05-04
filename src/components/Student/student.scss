@@ -4,15 +4,15 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   ul {
+    border: 1px solid #eee;
     li{
       &.nav-item {
         button {
           padding: 2rem;
-          background: #e4e4e4;
           color: $darkGreen;
           border-radius: 0;
           font-weight: bold;
-          border-right: 1px solid $darkGreen;
+          border-right: 1px solid #eee;
           text-transform: uppercase;
           position: relative;
           &.active {

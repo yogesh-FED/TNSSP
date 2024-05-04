@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../Header/header.scss';
 import { useNavigate } from 'react-router';
 import FontChanger from '../FontChanger/FontChanger';
+import logo from '../../Assets/Header-image/logo_tn.png';
 
 const Header = (props) => {
   const [dashValue, setDashValue] = useState(false);
@@ -26,12 +27,7 @@ const Header = (props) => {
 					<Row>
 						<Col xs={4} md={6}>
 							<div className='myProfile'>
-								<a href=''>
-									My Profile
-								</a>
-                <span onClick={() => handleChange()}>
-                  Dashboard
-                </span>
+              <img src={logo} alt="logo" />
 							</div>
 						</Col>
 						<Col xs={8}  md={6}  className='profileName-signOut'>

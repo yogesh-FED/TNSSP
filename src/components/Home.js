@@ -24,7 +24,7 @@ const Home = () => {
             <Header 
               onDashValueChange={handleDashValueChange}
             />
-            <Banner />
+            {/* <Banner /> */}
             <Student />
             {/* {
               isDashShow ? <StudentGrid /> : <Dashboard />

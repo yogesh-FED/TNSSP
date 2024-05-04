@@ -4,6 +4,10 @@ import Tabs from 'react-bootstrap/Tabs';
 import StudentGrid from '../Grid/StudentGrid';
 import './student.scss';
 import Schemecard from './Schemecard';
+import MotionFramer from '../MotionFramer/MotionFramer';
+import SchemeCards from '../MotionFramer/SchemeCards';
+import Aggrid from '../Aggrid/Aggrid';
+import EligibleSchemes from '../EligibleSchemes/EligibleSchemes';
 
 const Student = () => {
   const handleAvailClick = () => {
@@ -18,16 +22,18 @@ const Student = () => {
           className="mb-3"
           fill
         >
+          <Tab eventKey="Eligible" title="Your Eligible Schemes">
+            <EligibleSchemes />
+          </Tab>
           <Tab eventKey="BasicDetails" title="My Basic Details">
             <StudentGrid />
           </Tab>
-          <Tab eventKey="Eligible" title="Your Eligible Schemes">
-            <Schemecard />
-            <p className='availSchemes' onClick={() => handleAvailClick()}>Avail All Schemes</p>
+          <Tab eventKey="Dashboard" title="Dashboard">
+            
           </Tab>
-          {/* <Tab eventKey="Status" title="Status">
-            Tab content for Contact
-          </Tab> */}
+          <Tab eventKey="Scheme Status" title="Scheme Status">
+            
+          </Tab>
         </Tabs>
       </div>
     </>
