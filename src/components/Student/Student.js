@@ -28,11 +28,8 @@ const Student = () => {
           <Tab eventKey="BasicDetails" title="My Basic Details">
             <StudentGrid />
           </Tab>
-          <Tab eventKey="Dashboard" title="Dashboard">
-            
-          </Tab>
           <Tab eventKey="Scheme Status" title="Scheme Status">
-            
+            <Aggrid />
           </Tab>
         </Tabs>
       </div>

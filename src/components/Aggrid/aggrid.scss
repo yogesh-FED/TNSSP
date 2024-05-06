@@ -1,0 +1,44 @@
+@import '../../Style/variable';
+
+.btnStyle {
+  width: 100px;
+  border: 0;
+  background: transparent;
+  border-radius: 5px;
+  color: $white;
+  &.pendingBtnClr {
+    background: #dc3545;
+  }
+  &.approveBtnClr {
+    background: #198754;
+  }
+}
+.overLay {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 98.5%;
+  background: #d9d9d9;
+  z-index: 99;
+  opacity: 0.8;
+}
+.pendingScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  padding: 3rem;
+  background: $white;
+  z-index: 9999;
+  width: 50%;
+  margin: auto;
+}
+p.close {
+  width: max-content;
+  padding: 0.3rem 2rem;
+  border-radius: 5px;
+  background: $darkGreen;
+  color: $white;
+}
