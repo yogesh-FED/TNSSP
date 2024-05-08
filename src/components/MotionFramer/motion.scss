@@ -1,0 +1,28 @@
+@import '../../Style/variable';
+
+.schemeCard {
+  background: $white;
+  border-radius: 8px;
+  box-shadow: $boxShadow2;
+  padding: 15px;
+  margin: 1.5rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-align: center;
+  &.active {
+    background: $darkGreen;
+    color: $white;
+  }
+  .schemeMaincard {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-right: 1rem;
+  }
+  .desc {
+    padding: 1rem;
+  }
+}
