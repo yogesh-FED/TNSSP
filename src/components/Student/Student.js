@@ -3,6 +3,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import StudentGrid from '../Grid/StudentGrid';
 import './student.scss';
+import { Card, ListGroup, Container, Row, Col, Form } from 'react-bootstrap';
 import Schemecard from './Schemecard';
 import MotionFramer from '../MotionFramer/MotionFramer';
 import SchemeCards from '../MotionFramer/SchemeCards';
@@ -15,6 +16,13 @@ const Student = () => {
   }
   return (
     <>
+      <Container fluid className='studentDetailsList'>
+        <Row>
+          <Col lg={12} className='detailsSection'>
+            
+          </Col>
+        </Row>
+      </Container>
       <div className='studentScreen'>
         <Tabs
           defaultActiveKey="Eligible"

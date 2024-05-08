@@ -1,16 +1,13 @@
 @import '../../Style/variable';
 
 .btnStyle {
-  width: 100px;
+  margin-right: 0.5rem;
   border: 0;
   background: transparent;
   border-radius: 5px;
   color: $white;
-  &.pendingBtnClr {
-    background: #dc3545;
-  }
-  &.approveBtnClr {
-    background: #198754;
+  img {
+    width: 25px;
   }
 }
 .overLay {
@@ -23,22 +20,83 @@
   opacity: 0.8;
 }
 .pendingScreen {
+  background: $white;
+  //background: rgb(245,94,160);
+  //background: linear-gradient(9deg, rgba(245,94,160,1) 0%, rgba(255,0,0,1) 100%);
+  p.close {
+    width: max-content;
+    padding: 0.3rem 2rem;
+    border-radius: 5px;
+    background: $darkGreen;
+    color: $white;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: $boxShadow2;
+  }
+  h4 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    color: $pending;
+  }
+}
+.approvalScreen {
+  background: $white;
+  h4{
+    color: $success;
+  }
+}
+.screenPop {
   position: absolute;
-  top: 0;
+  top: 5rem;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 200px;
+  height: auto;
   padding: 3rem;
-  background: $white;
   z-index: 9999;
-  width: 50%;
+  width: 30%;
   margin: auto;
-}
-p.close {
-  width: max-content;
-  padding: 0.3rem 2rem;
   border-radius: 5px;
-  background: $darkGreen;
-  color: $white;
+  color: $fontColor;
+  p.close {
+    width: max-content;
+    padding: 0.3rem 2rem;
+    border-radius: 5px;
+    background: $darkGreen;
+    color: $white;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: $boxShadow2;
+  }
+  h4 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+}
+.paymentStatus {
+  background: $white;
+  h4 {
+    color: $success;
+  }
+}
+// .ag-cell-focus {
+//   border: none;
+//   &:focus {
+//     border: none !important;
+//   }
+// }
+.ag-ltr .ag-cell-focus:not(.ag-cell-range-selected):focus-within {
+  border: none;
+}
+.exportToXl {
+  text-align: right;
+  button {
+    border: none;
+    color: $white;
+    background: $darkGreen;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

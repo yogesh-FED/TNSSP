@@ -1,13 +1,21 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { AgGridReact } from 'ag-grid-react';
+import 'ag-grid-enterprise';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import './aggrid.scss';
+import Approve  from '../../Assets/icons/approve.png';
+import Pending  from '../../Assets/icons/pending.png';
+import Payment  from '../../Assets/icons/payment.png';
 
 const Aggrid = () => {
-  
+  const [gridApi, setGridApi] = useState(null);
+  const [columnApi, setColumnApi] = useState(null);
   const [overLay, setOverLay] = useState(false);
   const [pending, setPending] = useState(false);
+  const [approval, setApproval] = useState(false);
+  const [tableData, setTableData] = useState([]);
+  const [payment, setPayment] = useState(false);
   useEffect(() => {
     if(overLay) {
       document.body.style.overflow = 'hidden';
@@ -21,10 +29,27 @@ const Aggrid = () => {
   const handleClose = () => {
     setOverLay(false);
     setPending(false);
+    setApproval(false);
+    setPayment(false);
+  }
+  const handlePaymentClick = () => {
+    setOverLay(true);
+    setPayment(true);
   }
   const paginationPageSizeSelector = useMemo(() => {
     return [1, 2, 5, 10];
   }, []);
+
+  const onGridReady = params => {
+    setGridApi(params.api);
+    setColumnApi(params.columnApi);
+  };
+  const exportToExcel = () => {
+    gridApi.exportDataAsExcel({
+      fileName: 'grid-data.xlsx',
+      sheetName: 'Data'
+    });
+  };
   const [rowData, setRowData] = useState([
     { 
       flex: 1,
@@ -105,12 +130,29 @@ const Aggrid = () => {
   };
 
   const ButtonRenderer = ({ value, data, node, colDef, api, columnApi, context }) => { debugger;
-    const handleClick = () => {
+    const handleClick = () => { debugger;
       setOverLay(true);
-      alert(`Clicked row: ${data.SNo}`);
+      setTableData(data);
+      if(data.status === 'Pending') {
+        setPending(true);
+      } else {
+        setApproval(true);
+      }
+      //alert(`Clicked row: ${data.SNo}`);
     };
   
-    return <button className={data.status === 'Pending' ? 'pendingBtnClr btnStyle' : 'approveBtnClr btnStyle'} onClick={handleClick}> {data.status} </button>;
+    return (
+      <>
+      <span><button className='btnStyle'  onClick={handleClick}> {
+        data.status === 'Pending' ? <img src={Pending} /> : <img src={Approve} />
+      } </button></span>
+      <span><button className='btnStyle' onClick={handlePaymentClick}> 
+      {
+        data.status === 'Pending' ? '' : <img src={Payment} />
+      }
+      </button></span>
+      </>
+    );
   };
 
   const columnDefs = [
@@ -134,6 +176,7 @@ const Aggrid = () => {
     <>
       <div className="ag-theme-alpine" style={{ height: 'auto' }}>
         <AgGridReact
+          onGridReady={onGridReady}
           rowData={rowData}
           columnDefs={columnDefs}
           gridOptions={gridOptions}
@@ -155,12 +198,31 @@ const Aggrid = () => {
       }
       {
         pending && 
-        <div className='pendingScreen'>
-          <h5>Pending Status</h5>
-          <p>Pending with Institute!</p>
+        <div className='screenPop pendingScreen text-center'>
+          <h4>Pending Status</h4>
+          <p>Scheme Approval: <b>{tableData.Scheme_Name} </b> is <b>pending</b> with <b>Institute</b>!  </p>
           <p className='close' onClick={() => handleClose()}>Close</p>
         </div>
       }
+      {
+        approval && 
+        <div className='screenPop approvalScreen text-center'>
+          <h4>Approval Status</h4>
+          <p>Scheme Approval: <b>{tableData.Scheme_Name} </b> is <b>Approved</b> </p>
+          <p className='close' onClick={() => handleClose()}>Close</p>
+        </div>
+      }
+      {
+        payment && 
+        <div className='screenPop paymentStatus text-center'>
+          <h4>Payment Status</h4>
+          <p className='content'><b>Success</b></p>
+          <p className='close' onClick={() => handleClose()}>Close</p>
+        </div>
+      }
+      <div className='exportToXl'>
+        <button onClick={() => exportToExcel()}>Export to Excel</button>
+      </div>
     </>
   );
 };

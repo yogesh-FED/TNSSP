@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import { Card, ListGroup, Container, Row, Col, Form } from 'react-bootstrap';
 import './eligible.scss';
@@ -8,6 +8,27 @@ const EligibleSchemes = () => {
   const [schemesData, setSchemesData] = useState([]);
   const [filteredSearch, setFilteredSearch] = useState([]);
   const [filterSearchInput, setFilterSearchInput] = useState('');
+  const [isSticky, setSticky] = useState(false);
+  const stickyRef = useRef(null);
+  const contentRef = useRef(null);
+  const handleScroll = () => {
+    if (stickyRef.current) {
+      const stickyTop = stickyRef.current.getBoundingClientRect().top;
+      const stickyInitialTop = window.innerHeight - stickyRef.current.clientHeight;
+
+      if (window.scrollY > stickyInitialTop && stickyTop <= 0) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const [selectedSchemeIds, setSelectedSchemeIds] = useState(() => {
     return JSON.parse(localStorage.getItem('selectedSchemeIds')) || [];
   });
@@ -75,39 +96,26 @@ const EligibleSchemes = () => {
   const selectedSchemeNames = schemesData
     .filter(scheme => selectedSchemeIds.includes(scheme.SchemeName.replace(/([a-z])([A-Z])/g, '$1 $2')))
     .map(scheme => scheme.SchemeName.replace(/([a-z])([A-Z])/g, '$1 $2'));
+  
   return (
     <Container className='eliglibleSch'>
-      <Row className="mb-3">
+      <Row ref={stickyRef} className= {isSticky ? 'fixed "mb-3"' : '"mb-3 "'}>
         <Col xs={12} sm={6} md={4} lg={4} className='totalSelection'>
-        <div className='statusDiv text-center'>
-        <p><b>Total Fee of Selected Schemes</b></p>
-        <h3> <b>₹{totalSelectedFees}</b></h3>
-        </div>
-        </Col>
-        <Col xs={12} sm={6} md={4} lg={4} className='totalSelection'>
-        <div className='statusDiv text-center'>
-          <p><b>Total Number of Schemes Selected</b></p>
-          <h3><b>{selectedSchemeNames.length}</b></h3>
-        </div>
-          {/* <ul>
-            {
-              selectedSchemeNames.map((val,i) => { debugger;
-                return(
-                  <li>
-                    {val}
-                  </li>
-                )
-              })
-            }
-          </ul> */}
-        </Col>
-        {/* <Col xs={12} sm={6} md={4} lg={4} className='totalSelection'>
-          <p>Status: <b>{approve ? 'Pending' : ''}</b></p>
-        </Col> */}
+          <div className='statusDiv text-center'>
+          <p><b>Total Fee of Selected Schemes</b></p>
+          <h3> <b>₹{totalSelectedFees}</b></h3>
+          </div>
+          </Col>
+          <Col xs={12} sm={6} md={4} lg={4} className='totalSelection'>
+          <div className='statusDiv text-center'>
+            <p><b>Total Number of Schemes Selected</b></p>
+            <h3><b>{selectedSchemeNames.length}</b></h3>
+          </div>
+          </Col>
       </Row>
       <Row>
         <Col lg={12}>
-        <Form.Group className="mb-3">
+        <Form.Group className="mb-3 searchSchemeStyle">
             <Form.Label>Search Scheme</Form.Label>
              <Form.Control
                type="text"
@@ -148,7 +156,7 @@ const EligibleSchemes = () => {
         </Col>
       </Row>
       <Row>
-        <button onClick={handleSendForApproval} className=  {approve ? 'PendingBg sendForApproval' : 'sendForApproval'}>
+        <button onClick={handleSendForApproval} className= {approve ? 'PendingBg sendForApproval' : 'sendForApproval' }> 
           {
             approve ? <b>Approval Pending</b> : <b>Send for Approval</b>
           }
