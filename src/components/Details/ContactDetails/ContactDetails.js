@@ -20,7 +20,7 @@ const ContactDetails = () => {
   }, []);
   return (
     <div className='details'>
-			<Container>
+			<Container fluid>
 				<Row>
 					<Col lg={12} className='detailsDesc'>
 						{

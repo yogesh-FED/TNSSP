@@ -21,9 +21,9 @@ const Home = () => {
       <Container fluid>
         <Row>
           <Col lg={12}>
-            <Header 
+            {/* <Header 
               onDashValueChange={handleDashValueChange}
-            />
+            /> */}
             {/* <Banner /> */}
             <Student />
             {/* {

@@ -1,11 +1,25 @@
 @import '../../Style/variable';
 
 .btnStyle {
-  margin-right: 0.5rem;
+  text-align: center;
   border: 0;
-  background: transparent;
-  border-radius: 5px;
-  color: $white;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 50%;
+  cursor: pointer;
+  &.Applied {
+    background: $applied;
+  }
+  &.Rejected {
+    background: $rejected;
+    color: $white;
+  }
+  &.Approved {
+    background: $approved;
+  }
+  &.Pending {
+    background: $pending;
+  }
   img {
     width: 25px;
   }
@@ -39,12 +53,6 @@
     color: $pending;
   }
 }
-.approvalScreen {
-  background: $white;
-  h4{
-    color: $success;
-  }
-}
 .screenPop {
   position: absolute;
   top: 5rem;
@@ -72,12 +80,6 @@
     padding-bottom: 1rem;
   }
 }
-.paymentStatus {
-  background: $white;
-  h4 {
-    color: $success;
-  }
-}
 // .ag-cell-focus {
 //   border: none;
 //   &:focus {
@@ -98,5 +100,22 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+.statusHighlight {
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  color: $white;
+  &.applied {
+    background: $applied;
+  }
+  &.approved {
+    background: $approved;
+  }
+  &.rejected {
+    background: $rejected;
+  }
+  &.pending {
+    background: $pending;
   }
 }

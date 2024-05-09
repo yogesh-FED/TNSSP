@@ -1,41 +1,21 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-enterprise';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import './aggrid.scss';
-import Approve  from '../../Assets/icons/approve.png';
-import Pending  from '../../Assets/icons/pending.png';
-import Payment  from '../../Assets/icons/payment.png';
+import Popup from '../Popup/Popup';
+import Table from 'react-bootstrap/Table';
+import { Card, ListGroup, Container, Row, Col, Form } from 'react-bootstrap';
 
 const Aggrid = () => {
   const [gridApi, setGridApi] = useState(null);
   const [columnApi, setColumnApi] = useState(null);
-  const [overLay, setOverLay] = useState(false);
-  const [pending, setPending] = useState(false);
-  const [approval, setApproval] = useState(false);
+  const [showPop, setShowPop] = useState(false);
   const [tableData, setTableData] = useState([]);
-  const [payment, setPayment] = useState(false);
-  useEffect(() => {
-    if(overLay) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  },[overLay])
-  const handleClose = () => {
-    setOverLay(false);
-    setPending(false);
-    setApproval(false);
-    setPayment(false);
-  }
-  const handlePaymentClick = () => {
-    setOverLay(true);
-    setPayment(true);
-  }
+  const [isOpen, setIsOpen] = useState(false);
+  const openPopup = () => setIsOpen(true);
+  const closePopup = () => setIsOpen(false);
   const paginationPageSizeSelector = useMemo(() => {
     return [1, 2, 5, 10];
   }, []);
@@ -58,7 +38,7 @@ const Aggrid = () => {
       Applied_On: '12/03/2023',
       Academic_Year: '2023-24',
       Scheme_Fee: 60000,
-      status: 'Pending',
+      status: 'Applied',
     },
     { 
       flex: 1,
@@ -67,7 +47,7 @@ const Aggrid = () => {
       Applied_On: '19/10/2022',
       Academic_Year: '2021-22',
       Scheme_Fee: 40000,
-      status: 'Approved',
+      status: 'Rejected',
     },
     { 
       flex: 1,
@@ -85,7 +65,7 @@ const Aggrid = () => {
       Applied_On: '17/05/2022',
       Academic_Year: '2022-23',
       Scheme_Fee: 24000,
-      status: 'Approved',
+      status: 'Applied',
     },
     { 
       flex: 1,
@@ -94,7 +74,7 @@ const Aggrid = () => {
       Applied_On: '08/04/2023',
       Academic_Year: '2023-24',
       Scheme_Fee: 20450,
-      status: 'Pending',
+      status: 'Approved',
     },
     { 
       flex: 1,
@@ -112,7 +92,7 @@ const Aggrid = () => {
       Applied_On: '21/06/2024',
       Academic_Year: '2024-25',
       Scheme_Fee: 10000,
-      status: 'Approved',
+      status: 'Applied',
     },
     { 
       flex: 1,
@@ -128,35 +108,22 @@ const Aggrid = () => {
   const gridOptions = {
     rowSelection: 'multiple'
   };
-
-  const ButtonRenderer = ({ value, data, node, colDef, api, columnApi, context }) => { debugger;
-    const handleClick = () => { debugger;
-      setOverLay(true);
+  const ButtonRenderer = ({ value, data, node, colDef, api, columnApi, context }) => {
+    const handleClick = () => {
       setTableData(data);
-      if(data.status === 'Pending') {
-        setPending(true);
-      } else {
-        setApproval(true);
-      }
-      //alert(`Clicked row: ${data.SNo}`);
+      setIsOpen(true);
     };
   
     return (
       <>
-      <span><button className='btnStyle'  onClick={handleClick}> {
-        data.status === 'Pending' ? <img src={Pending} /> : <img src={Approve} />
-      } </button></span>
-      <span><button className='btnStyle' onClick={handlePaymentClick}> 
-      {
-        data.status === 'Pending' ? '' : <img src={Payment} />
-      }
-      </button></span>
+        <p className= {data.status === 'Pending' ? 'Pending btnStyle' : data.status === 'Applied' ? 'Applied btnStyle' : data.status === 'Approved' ? 'Approved btnStyle' : data.status === 'Rejected' ? 'Rejected btnStyle' : ''}  onClick={handleClick}> {
+          data.status === 'Pending' ? 'Pending' : data.status === 'Applied' ? 'Applied' : data.status === 'Approved' ? 'Approved' : data.status === 'Rejected' ? 'Rejected' : ''
+        } </p>
       </>
     );
   };
 
   const columnDefs = [
-    { field: 'SNo' },
     { field: 'Scheme_Name' },
     { field: 'Applied_On' },
     { field: 'Academic_Year' },
@@ -172,11 +139,21 @@ const Aggrid = () => {
     }
   ];
 
+  const defaultColDef = useMemo(() => {
+    return {
+      filter: 'agTextColumnFilter',
+      floatingFilter: true,
+      flex: 1,
+    }
+  }, []);
   return (
     <>
       <div className="ag-theme-alpine" style={{ height: 'auto' }}>
         <AgGridReact
+          suppressRowClickSelection={true}
           onGridReady={onGridReady}
+          filter= 'agTextColumnFilter'
+          floatingFilter = {true}
           rowData={rowData}
           columnDefs={columnDefs}
           gridOptions={gridOptions}
@@ -184,44 +161,51 @@ const Aggrid = () => {
           paginationPageSize={5}
           paginationPageSizeSelector = {paginationPageSizeSelector}
           domLayout='autoHeight'
-          defaultColDef={{
-            sortable: true,
-            resizable: true,
-            flex: 1
-          }}
+          defaultColDef = {defaultColDef}
+          // defaultColDef={{
+          //   sortable: true,
+          //   resizable: true,
+          //   flex: 1
+          // }}
         >
         </AgGridReact>
       </div>
-      {
-        overLay && 
-        <div className='overLay'></div>
-      }
-      {
-        pending && 
-        <div className='screenPop pendingScreen text-center'>
-          <h4>Pending Status</h4>
-          <p>Scheme Approval: <b>{tableData.Scheme_Name} </b> is <b>pending</b> with <b>Institute</b>!  </p>
-          <p className='close' onClick={() => handleClose()}>Close</p>
-        </div>
-      }
-      {
-        approval && 
-        <div className='screenPop approvalScreen text-center'>
-          <h4>Approval Status</h4>
-          <p>Scheme Approval: <b>{tableData.Scheme_Name} </b> is <b>Approved</b> </p>
-          <p className='close' onClick={() => handleClose()}>Close</p>
-        </div>
-      }
-      {
-        payment && 
-        <div className='screenPop paymentStatus text-center'>
-          <h4>Payment Status</h4>
-          <p className='content'><b>Success</b></p>
-          <p className='close' onClick={() => handleClose()}>Close</p>
-        </div>
-      }
       <div className='exportToXl'>
         <button onClick={() => exportToExcel()}>Export to Excel</button>
+      </div>
+      <div className='text-left'>
+        <Popup isOpen={isOpen} closePopup={closePopup}>
+        <Col lg={12}>
+            <Table>
+              <tbody>
+                <tr>
+                  <td><b>Scheme Name :</b></td>
+                  <td>{ tableData.Scheme_Name }</td>
+                </tr>
+                <tr>
+                  <td><b>Status :</b></td>
+                  <td><b className= {tableData.status === 'Applied' ? 'statusHighlight applied' : tableData.status === 'Approved' ? 'statusHighlight approved' : tableData.status === 'Rejected' ? 'statusHighlight rejected' : tableData.status === 'Pending' ? 'statusHighlight pending' : ''}>{ tableData.status === 'Applied' ? 'Scheme Approval is pending with Institute.' : tableData.status === 'Approved' ? 'Your Scheme is Approved.' : tableData.status === 'Rejected' ? 'Scheme Rejected.' : tableData.status === 'Pending' ? 'Scheme Approval is pending with Department.' : '' }</b></td>
+                </tr>
+                <tr>
+                  <td><b>Academic Year :</b></td>
+                  <td>{tableData.Academic_Year}</td>
+                </tr>
+                <tr>
+                  <td><b>Scheme Fee :</b></td>
+                  <td>{tableData.Scheme_Fee }</td>
+                </tr>
+                <tr>
+                  <td><b>Account Number :</b></td>
+                  <td>99442233450002</td>
+                </tr>
+                <tr>
+                  <td><b>IFSC Code :</b></td>
+                  <td>UIB0003456</td>
+                </tr>
+              </tbody>
+            </Table>
+          </Col>
+        </Popup>
       </div>
     </>
   );

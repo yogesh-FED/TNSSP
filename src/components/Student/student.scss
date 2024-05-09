@@ -1,13 +1,62 @@
 @import '../../Style/variable';
 
-.studentDetailsList {
-  .detailsSection {
-    padding: 1rem;
-    border: 1px solid #eee;
+// .studentDetailsList {
+//   .detailsSection {
+//     padding: 2rem;
+//     width: 75%;
+//     border: 1px solid #eee;
+//     .studentList {
+//       margin-bottom: 1rem;
+//       .innerListDiv {
+//         padding: 1rem;
+//         background: #eee;
+//       }
+//       p {
+//         font-weight: 700;
+//         color: $fieldName;
+//         margin: 0;
+//       }
+//       span {
+//         color: $fontColor;
+//       }
+//     }
+//   }
+// }
+.selectAllSchemes {
+  font-size: 16px;
+  padding: 0.5rem;
+}
+.approveBtn {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: auto;
+  background: $darkGreen;
+  color: $white;
+  cursor: pointer;
+  &.appliedBtn {
+    background: #eee;
+    cursor: not-allowed;
+    z-index: -1;
+    color: $darkGreen;
   }
 }
+.studentBasicDetails {
+  background: #eee;
+  margin-top: 1rem;
+  border:1px solid #ccc;
+  table {
+    td {
+      border-bottom: none;
+      background: transparent;
+    }
+  }
+}
+.errHead {
+  color: $rejected;
+}
 .studentScreen {
-  padding-top: 2rem;
   padding-bottom: 2rem;
   ul {
     border: 1px solid #eee;
@@ -46,7 +95,7 @@
     }
   }
   .tab-content {
-    padding-top: 3rem;
+    padding-top: 1rem;
   }
   .availSchemes {
     padding: 1rem;
